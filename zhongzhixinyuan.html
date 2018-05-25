@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8"/>
+	    <title>demo</title>
+	    <style>
+	    	.header{
+	    		height:173px;
+	    		width:1560px;
+	    		background-color:#f0f0f1;
+	    	}
+	    	.logo{
+	    		height:95px;
+	    		padding-top:30px;
+	    		text-align: center;
+	    	}
+	    	.daohang{
+	    		width:670px;
+	    		height:45px;
+	    		background-color:#fff;
+	    		margin:0 auto;
+	    		border-radius:22.5px;
+	    		list-style:none;
+	    	}
+	    	.daohang li{
+	    		height:45px;
+	    		float:left;
+	    		padding:0px 25px;
+	    		line-height:45px;
+	    		background:url(bian.png) no-repeat right center;
+	    	}
+	    	.daohang li a{
+	    		display:block;
+	    		height:42px;
+	    		border-bottom:3px solid #1e50ae;
+	    	}
+	    	.daohang li:last-child{
+	    		background:none;
+	    	}
+	    	.pingtai{
+	    		height:407px;
+	    		width:1560px;
+	    		background:url(pingtai.png) no-repeat center;
+	    	}
+	    	.fuwu{
+	    		height:810px;
+	    		width:1560px;
+	    	}
+	    	.fuwu1{
+	    		height:810px;
+	    		width:1200px;
+	    		margin: 0 auto;
+	    	}
+	    	.xiangmu{
+	    		margin-top:62px;
+	    		font-size:34px;
+	    		text-align:center;
+	    	}
+	    	.yingwen{
+	    		margin-top:25px;
+	    		font-size: 31.45px;
+	    		text-align:center;
+	    	}
+	    	.juti{
+	    		height:420px;
+	    		width:300px;
+	    		float:left;
+	    	}
+	    	.img{
+	    		text-align:center;
+	    		margin-top:60px;
+	    	}
+	    	.img1{
+	    		text-align:center;
+	    	}
+	    	.xiushi{
+	    		margin-left:73px;
+	    		color:#c8c8c8;
+	    		font-size:14px;
+	    		list-style-position: inside;
+	    	}
+	    	.xiushi1{
+	    		text-align:center;
+	    		font-size:16px;
+	    	}
+	    	.juti1{
+	    		height:245px;
+	    		width:300px;
+	    		float:left;
+	    	}
+	    	.fangan{
+	    		height:712px;
+	    		width:1560px;
+	    		background: url(fangan.png) no-repeat center;
+	    	}
+	    	.jutifangan{
+	    		height:712px;
+	    		width:1200px;
+	    		margin:0 auto;
+	    	}
+	    	.jiejuefangan{
+	    		padding-top: 65px;
+	    		font-size:34px;
+	    		color:#ffffff;
+	    		text-align:center;
+	    	}
+	    	.yingwen1{
+	    		font-size:31.45px;
+	    		color:#ffffff;
+	    		margin-top:23px;
+	    		text-align:center;
+	    	}
+	    	.xiaofangan{
+	    		margin-top: 74px;
+	    		margin-left:44px;
+	    		height:300px;
+	    		width:230px;
+	    		float:left;
+	    	}
+	    	.left{
+	    		margin-top: 74px;
+	    		width:30px;
+	    		height:300px;
+	    		text-align:center;
+	    		color:#929292;
+	    		float:left;
+	    		line-height: 300px;
+	    		font-size:44.98px;
+	    	}
+	    	.right{
+	    		margin-top:74px;
+	    		width:30px;
+	    		height:300px;
+	    		text-align:center;
+	    		color:#929292;
+	    		font-size:44.98px;
+	    		line-height: 300px;
+	    		float:right;
+	    	}
+	    	.box{
+	    		margin-top:60px;
+	    		height:120px;
+	    		width:1200px;
+	    		float:left;
+	    		text-align:center;
+	    	}
+	    	.button{
+	    		width:230px;
+	    		height:50px;
+	    		font-size:24px;
+	    		color:#ffffff;
+	    		line-height: 50px;
+	    		border-radius: 25px;
+	    		border:1px solid #ffffff;
+	    		text-align: center;
+	    		margin: 0 auto;
+	    	}
+	    	.zixun{
+	    		width:1560px;
+	    		height:970px;
+	    	}.jutizixun{
+	    		width:1200px;
+	    		height:970px;
+	    		margin:0 auto;
+	    	}
+	    	.zuixinzixun{
+	    		padding-top: 55px;
+	    		font-size:34px;
+	    		color:#000000;
+	    		text-align:center;
+	    	}
+	    	.yingwen2{
+	    		font-size:31.45px;
+	    		color:#000000;
+	    		margin-top:23px;
+	    		margin-bottom:30px;
+	    		text-align:center;
+	    	}
+	    	.xiaobankuai{
+	    		height:400px;
+	    		width:600px;
+	    		float:left;
+	    	}
+	    	.jiaoyi{
+	    		font-size:22px;
+	    		margin-top:30px;
+	    		margin-bottom: 20px;
+	    	}
+	    	.yingwen3{
+	    		font-size:18px;
+	    		margin-bottom: 33px;
+	    	}
+	    	.duanluo{
+	    		font-size:14px;
+	    		color:#969696;
+	    		line-height:32px;
+	    	}
+	    	.xiangqing{
+	    		margin-top:30px;
+	    		width:142px;
+	    		height:41px;
+	    		border-radius: 20px;
+	    		border:1px solid #1141a3;
+	    		text-align:center;
+	    		font-size:16px;
+	    		color:#1141a3;
+	    		line-height:41px;
+	    	}
+	    	.wenti{
+	    		list-style:none;
+	    		font-size:14px;
+	    		color:#797979;
+	    		line-height:47px;
+	    	}
+	    	.wenti li{
+	    		border-bottom:1px dashed #dcdcdc;
+	    	}
+	    	.wenti li:last-child{
+	    		border-bottom:none;
+	    	}
+	    	.biaoshi{
+	    		height:150px;
+	    		width:1560px;
+	    		background-color:#f5f5f5;
+	    	}
+	    	.jutibiaoshi{
+	    		height:150px;
+	    		width:1200px;
+	    		margin:0 auto;
+	    	}
+	    	.yaoqiu{
+	    		margin-top: 20px;
+	    		height:70px;
+	    		width:1200px;
+	    		list-style:none;
+	    		float:left;
+	    	}
+	    	.yaoqiu li{
+	    		float:left;
+	    		height:70px;
+	    		background:url(bian1.png) no-repeat right center;
+	    	}
+	    	.tupian{
+	    		float:left;
+	    		height:70px;
+	    		width:50px;
+	    		margin-left:50px;
+	    	}
+	    	.wenzi{
+	    		margin-left:30px;
+	    		width:140px;
+	    		float:left;
+	    	}
+	    	.dibu{
+	    		background-color: #323232;
+	    		height:263px;
+	    		width:1560px;
+	    	}
+	    	.jutidibu{
+	    		height:263px;
+	    		width:1200px;
+	    		margin: 0 auto;
+	    	}
+	    	.xiaodibu{
+	    		width:600px;
+	    		height:260px;
+	    		float:left;
+	    	}
+	    	.liebiao{
+	    		width:145px;
+	    		height:255px;
+	    		float:left;
+	    	}
+	    	.xiushi2{
+	    		color:#ffffff;
+	    		font-size:14px;
+	    		list-style:none;
+	    	}
+	    	.xiushi2 li{
+	    		line-height: 45px;
+	    	}
+	    	.daxiao1{
+	    		font-size:18px;
+	    	}
+	    	.lianxi{
+	    		height:260px;
+	    		width:300px;
+	    		border-right:1px solid #e0e0e0;
+	    		float:left;
+	    	}
+	    	.lianxi1{
+	    		height:260px;
+	    		width:280px;
+	    		float:left;
+	    	}
+	    	.saotu{
+	    		margin-top: 50px;
+	    		margin-left: 30px;
+	    		float:left;
+	    		height:160px;
+	    		width:120px;
+	    	}
+	    	.zi{
+	    		margin-top:40px;
+	    		margin-left:60px;
+	    		color:#ffffff;
+	    		font-size:14px;
+	    		float:left;
+	    	}
+	    	.wenzi3{
+	    		margin-left:50px;
+	    		margin-top:50px;
+	    		font-size:16px;
+	    		color:#ffffff;
+	    	}
+	    	.zuixia{
+	    		height:124px;
+	    		width:1560px;
+	    		background-color: #323232;
+	    		border-top: 1px solid #e0e0e0;
+	    		text-align:center;
+	    	}
+	    	.liebiao1{
+	    		height:30px;
+	    		width:1560px;
+	    		text-align:center;
+	    		list-style: none;
+	    		float:left;
+	    		color:#ffffff;
+	    	}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<img src="logo.png" alt="logo"\>
+			</div>
+			<ul class="daohang">
+				<li>
+					<a>首页</a>
+				</li>
+				<li>关于我们</li>
+				<li>中智服务</li>
+				<li>解决方案</li>
+				<li>最新资讯</li>
+				<li>联系我们</li>
+			</ul>
+		</div>
+		<div class="pingtai">
+		</div>
+		<div class="fuwu">
+			<div class="fuwu1">
+				<div class="xiangmu">
+					<a>服务项目</a>
+				</div>
+				<div class="yingwen">
+					<a>SERVICE ITEMS</a>
+				</div>
+				<div class="juti">
+					<div class="img">
+						<img src="images/xx1.png">
+					</div>
+					<div class="xiushi">
+						<ul><span style="color:#000000; font-size:16px">工商管理</span>
+							<li>公司注册</li>
+							<li>公司注册地址</li>
+							<li>分公司注册</li>
+							<li>外资注册</li>
+							<li>股权变更</li>
+							<li>公司注销</li>
+						</ul>
+					</div>
+				</div>
+				<div class="juti">
+					<div class="img">
+						<img src="images/xx2.png">
+					</div>
+					<div class="xiushi">
+						<ul><span style="color:#000000; font-size:16px;">财务代理</span>
+							<li>代理记账</li>
+							<li>税务筹划</li>
+							<li>审计服务</li>
+						</ul>
+					</div>
+				</div>
+				<div class="juti">
+					<div class="img">
+						<img src="images/xx3.png">
+					</div>
+					<div class=xiushi>
+						<ul><span style="color:#000000;font-size:16px;">资质服务</span>
+							<li>各类许可证</li>
+							<li>资质审批</li>
+							<li>高新企业</li>
+							<li>商标专利</li>
+						</ul>
+					</div>
+				</div>
+				<div class="juti">
+					<div class="img">
+						<img src="images/xx4.png">
+					</div>
+					<div class="xiushi">
+						<ul><span style="color:#000000; font-size:16px;">特色服务</span>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				<div class="juti1">
+					<div class="img1">
+						<img src="images/xx5.png">
+					</div>
+					<div class="xiushi1">
+						<a>公积金社保代理</a>
+					</div>
+				</div>
+				<div class="juti1">
+					<div class="img1">
+						<img src="images/xx6.png">
+					</div>
+					<div class="xiushi1">
+						<a>办公室租凭</a>
+					</div>
+				</div>
+				<div class="juti1">
+					<div class="img1">
+						<img src="images/xx7.png">
+					</div>
+					<div class="xiushi1">
+						<a>营业执照转让</a>
+					</div>
+				</div>
+				<div class="juti1">
+					<div class="img1">
+						<img src="images/xx8.png">
+					</div>
+					<div class="xiushi1">
+						<a>法律服务</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fangan">
+			<div class="jutifangan">
+				<div class="jiejuefangan">
+					<a>解决方案</a>
+				</div>
+				<div class="yingwen1">
+					<a>SOLUTION</a>
+				</div>
+				<div class="left">
+					<a><|</a>
+				</div>
+				<div class="xiaofangan">
+					<img src="images/fa1.png" />
+				</div>
+				<div class="xiaofangan">
+					<img src="images/fa2.png" />
+				</div>
+				<div class="xiaofangan">
+					<img src="images/fa3.png" />
+				</div>
+				<div class="xiaofangan">
+					<img src="images/fa4.png" />
+				</div>
+				<div class="right">
+					<a>|></a>
+				</div>
+				<div class="box">
+					<div class="button">
+						<a>了解更多>></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="zixun">
+			<div class="jutizixun">
+				<div class="zuixinzixun"">
+					<a>最新资讯</a>
+				</div>
+				<div class="yingwen2">
+					<a>LATEST INFORMATION</a>
+				</div>
+				<div class="xiaobankuai">
+					<div class="img1">
+						<img src="zixun.png"/>
+					</div>
+				</div>
+				<div class="xiaobankuai">
+					<div class="jiaoyi">
+						<a>交易明智&方便</a>
+					</div>
+					<div class="yingwen3">	
+						<a>TRANSACTION WISE&CONVENIENT</a>
+					</div>
+					<div class="duanluo">
+						<a>要适应快速发展的差价合约市场，客户需要一个能让他们不用经纪商介入就能分析实时报价、进行实时交易以及应用投资策略的平台。他们需要一个简单便捷的界面来管理他们的账户，并能轻松查看图标和报告。</a>
+					</div>
+					<div class="xiangqing">
+						<a>了解详情</a>
+					</div>
+				</div>
+				<div class="xiaobankuai">
+					<ul class="wenti">
+						<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+						<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+						<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+						<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+						<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+						<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+					</ul>
+				</div>
+				<div class="xiaobankuai">
+					<ul class="wenti">
+						<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+						<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+						<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+						<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+						<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+						<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="biaoshi">
+			<div class="jutibiaoshi">
+				<ul class="yaoqiu">
+					<li>
+						<div class="tupian">
+							<img src="zizhirenzheng.png"/>
+						</div>
+						<div class="wenzi">
+							<h3>资质认证</h3>
+							<p><span style="font-size:13px;">服务商100%实名认证</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="tupian">
+							<img src="zhifuanquan.png"/>
+						</div>
+						<div class="wenzi">
+							<h3>支付安全</h3>
+							<p><span style="font-size:13px;">明码标价支付及信息安全</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="tupian">
+							<img src="baoxianpeifu.png"/>
+						</div>
+						<div class="wenzi">
+							<h3>保险赔付</h3>
+							<p><span style="font-size:13px;">为您提供担保赔付</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="tupian">
+							<img src="shouhouwuyou.png"/>
+						</div>
+						<div class="wenzi">
+							<h3>售后无忧</h3>
+							<p><span style="font-size:13px;">服务出现问题经理全程跟进</span></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="dibu">
+			<div class="jutidibu">
+				<div class="xiaodibu">
+					<div class="liebiao">
+						<ul class="xiushi2">
+							<p class="daxiao1">中智信元</p>
+							<li>加入我们</li>
+							<li>联系我们</li>
+							<li>最新动态</li>
+						</ul>
+					</div>
+					<div class="liebiao">
+						<ul class="xiushi2">
+							<p class="daxiao1">订单服务</p>
+							<li>支付方式</li>
+							<li>退款说明</li>
+							<li>购买流程</li>
+						</ul>
+					</div>
+					<div class="liebiao">
+						<ul class="xiushi2">
+							<p class="daxiao1">售后服务</p>
+							<li>在线问答</li>
+							<li>服务中心</li>
+							<li>售后政策</li>
+						</ul>
+					</div>
+					<div class="liebiao">
+						<ul class="xiushi2">
+							<p class="daxiao1">常见问题</p>
+							<li>新手帮助</li>
+							<li>支付帮助</li>
+							<li>开具发票</li>
+						</ul>
+					</div>
+				</div>
+				<div class="xiaodibu">
+					<div class="lianxi">
+						<div class="saotu">
+							<img src="erweima.png"/>
+						</div>
+						<div class="zi">
+							<p>微</p>
+							<p>信</p>
+							<p>扫</p>
+							<p>一</p>
+							<p>扫</p>
+						</div>
+					</div>
+					<div class="lianxi1">
+						<div class="wenzi3">
+							<p>
+							咨询热线:400-000-0000</p>
+							<p>
+								<img src="qq.png"/>
+								123456788@qq.com
+							</p>
+							<p>
+								<img src="weixin.png"/>
+								某某企业网站官方微信
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="zuixia">
+    		<ul class="liebiao1">
+    			<li>首页 | 工商代理 | 财务代记账 | 股权交易与变更 | 企业贷款 | 办公室租赁 | 社保公积金代理 | 法律服务</li>
+    		</ul>
+    		<p><span style="color:#ffffff">©2017-2018中智信元版权有限公司版权所有</span></p>
+		</div>
+	</body>
+</html>
